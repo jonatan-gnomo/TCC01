@@ -1,0 +1,119 @@
+/* compiled by scssphp v0.0.10 on Wed, 18 Dec 2019 14:53:22 +0000 (0.0465s) */
+
+/*
+ * Button mixin- creates 3d-ish button effect with correct
+ * highlights/shadows, based on a base color.
+ */
+html, body {
+  background: #f3f6f9; }
+
+#wpadminbar {
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.05); }
+
+#collapse-menu {
+  margin-top: auto !important;
+  padding: 4px 6px !important;
+  background-color: #10151d; }
+
+#adminmenu li.wp-menu-separator {
+  margin: 0;
+  height: 10px;
+  display: block !important; }
+  #adminmenu li.menu-top {
+    min-height: 36px; }
+    #adminmenu li.menu-top div.wp-menu-image {
+      width: 48px; }
+    #adminmenu li.menu-top .menu-top {
+      position: static; }
+      #adminmenu li.menu-top .menu-top:after {
+        display: none; }
+      .admin-menu-h #adminmenu li.menu-top .menu-top {
+        margin: 0; }
+    #adminmenu li.menu-top.wp-menu-open .menu-top:before, #adminmenu li.menu-top.current .menu-top:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background-color: currentColor;
+      z-index: 10; }
+    .admin-menu-h #adminmenu li.menu-top {
+      margin: 5px 4px;
+      border-radius: 3px;
+      background: #0c1016; }
+      .admin-menu-h #adminmenu li.menu-top .menu-top:before {
+        display: none; }
+    body:not(.admin-menu-h) #adminmenu li.menu-top, body:not(.admin-menu-h) #adminmenu li.menu-top:hover, body:not(.admin-menu-h) #adminmenu li.menu-top:focus, body:not(.admin-menu-h) #adminmenu li.menu-top:active {
+      background: transparent; }
+    body:not(.folded):not(.admin-menu-h) #adminmenu li.menu-top.wp-menu-open .wp-submenu > li > a {
+      padding-left: 48px; }
+  #adminmenu > li:nth-child(-n+6) {
+    background-color: #10151d !important; }
+  #adminmenu > li:nth-child(7) {
+    margin-top: 10px; }
+  body:not(.admin-menu-h) #adminmenu {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 50px);
+    margin: 0; }
+
+@media screen and (min-width: 782px) {
+  .folded:not(.admin-menu-h) #adminmenu, .folded:not(.admin-menu-h) #adminmenu li.menu-top, .folded:not(.admin-menu-h) #adminmenuback, .folded:not(.admin-menu-h) #adminmenuwrap, .folded:not(.admin-menu-h) #wp-admin-bar-site-name, .folded:not(.admin-menu-h) #wp-admin-bar-visit-site {
+    width: 64px; }
+    .folded:not(.admin-menu-h) #wp-admin-bar-site-name, .folded:not(.admin-menu-h) #wp-admin-bar-visit-site {
+      text-align: center; }
+      .folded:not(.admin-menu-h) #wp-admin-bar-site-name img, .folded:not(.admin-menu-h) #wp-admin-bar-visit-site img {
+        float: none !important; }
+      .folded:not(.admin-menu-h) #wp-admin-bar-site-name img + span, .folded:not(.admin-menu-h) #wp-admin-bar-visit-site img + span {
+        display: none; }
+    .folded:not(.admin-menu-h) #adminmenu .wp-menu-name {
+      font-size: 11px;
+      font-weight: normal;
+      width: 64px;
+      padding: 0 0 6px 0;
+      display: table-cell;
+      vertical-align: middle; }
+    .folded:not(.admin-menu-h) #adminmenu div.wp-menu-image {
+      padding: 8px 0; }
+      .folded:not(.admin-menu-h) #adminmenu div.wp-menu-image:before {
+        padding: 0;
+        font-size: 18px; }
+    .folded:not(.admin-menu-h) #adminmenu li.menu-top a.menu-top {
+      height: 36px; }
+    .folded.admin-menu-h #adminmenu li.menu-top .menu-top {
+      padding: 0 6px; }
+    .folded.admin-menu-h #adminmenu div.wp-menu-image {
+      padding-top: 0; }
+    body:not(.admin-menu-h) #wp-admin-bar-site-name, body:not(.admin-menu-h) #wp-admin-bar-visit-site {
+      width: 200px; }
+    body:not(.admin-menu-h) #wp-admin-bar-site-name, body:not(.admin-menu-h) #wp-admin-bar-visit-site, body:not(.admin-menu-h) #wp-admin-bar-site-name > a, body:not(.admin-menu-h) #wp-admin-bar-visit-site > a {
+      background-color: #111720;
+      color: rgba(160, 180, 200, 0.85); } }
+
+@media (min-width: 782px) and (max-width: 960px) {
+  .auto-fold:not(.admin-menu-h) #adminmenu, .auto-fold:not(.admin-menu-h) #adminmenu li.menu-top, .auto-fold:not(.admin-menu-h) #adminmenuback, .auto-fold:not(.admin-menu-h) #adminmenuwrap, .auto-fold:not(.admin-menu-h) #wp-admin-bar-site-name, .auto-fold:not(.admin-menu-h) #wp-admin-bar-visit-site {
+    width: 64px; }
+    .auto-fold:not(.admin-menu-h) #wp-admin-bar-site-name, .auto-fold:not(.admin-menu-h) #wp-admin-bar-visit-site {
+      text-align: center; }
+      .auto-fold:not(.admin-menu-h) #wp-admin-bar-site-name img, .auto-fold:not(.admin-menu-h) #wp-admin-bar-visit-site img {
+        float: none !important; }
+      .auto-fold:not(.admin-menu-h) #wp-admin-bar-site-name img + span, .auto-fold:not(.admin-menu-h) #wp-admin-bar-visit-site img + span {
+        display: none; }
+    .auto-fold:not(.admin-menu-h) #adminmenu .wp-menu-name {
+      font-size: 11px;
+      font-weight: normal;
+      width: 64px;
+      padding: 0 0 6px 0;
+      display: table-cell;
+      vertical-align: middle; }
+    .auto-fold:not(.admin-menu-h) #adminmenu div.wp-menu-image {
+      padding: 8px 0; }
+      .auto-fold:not(.admin-menu-h) #adminmenu div.wp-menu-image:before {
+        padding: 0;
+        font-size: 18px; }
+    .auto-fold:not(.admin-menu-h) #adminmenu li.menu-top a.menu-top {
+      height: 36px; }
+    .auto-fold.admin-menu-h #adminmenu li.menu-top .menu-top {
+      padding: 0 6px; }
+    .auto-fold.admin-menu-h #adminmenu div.wp-menu-image {
+      padding-top: 0; } }

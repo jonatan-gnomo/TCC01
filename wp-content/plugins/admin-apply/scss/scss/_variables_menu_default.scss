@@ -1,0 +1,21 @@
+$text-color: #aeb4bb;
+$base-color: #19222d;
+$highlight-color: #53a6fa;
+$notification-color: #81d742;
+$button-color: #53a6fa;
+
+$menu-text: rgba(160, 180, 200, 0.85);
+$menu-icon: $menu-text;
+$menu-background: $base-color;
+
+$menu-highlight-text: $highlight-color;
+$menu-highlight-icon: $highlight-color;
+$menu-highlight-background: transparent;
+
+$menu-submenu-text: $text-color;
+$menu-submenu-background: $base-color;
+$menu-submenu-background-alt: $base-color;
+$menu-submenu-focus-text: #fff;
+$menu-submenu-current-text: $menu-submenu-focus-text;
+
+$menu-bubble-text: #fff;
